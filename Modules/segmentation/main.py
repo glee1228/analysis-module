@@ -128,7 +128,7 @@ class Segmentation:
                 for idx in range(s6_gray.shape[0]):
                     out = s6_gray[idx]
                     out_img = Image.fromarray(np.uint8(out))
-                     fname = fpath[idx].split('/')[-1]
+                    fname = fpath[idx].split('/')[-1]
                     fname_lst = fname.split('_')
                     x_start = int(fname_lst[len(fname_lst) - 2])
                     y_start = int(fname_lst[len(fname_lst) - 1].split('.')[0])
